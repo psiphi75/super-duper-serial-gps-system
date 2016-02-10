@@ -1,0 +1,34 @@
+{
+  "name": "serialgps",
+  "version": "0.5.0",
+  "description": "Simple module to handle serial based NMEA GPS devices",
+  "main": "./src/serialgps.js",
+  "scripts": {
+    "test": "node test/testParser.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/omcaree/node-serialgps.git"
+  },
+  "dependencies": {
+    "serialport": "~2.0.6",
+    "nmea": "0.0.9"
+  },
+  "keywords": [
+    "GPS",
+    "NMEA",
+    "node.js"
+  ],
+  "author": "Owen McAree",
+  "contributors": [
+    {
+      "name": "Simon Werner",
+      "url": "https://github.com/psiphi75"
+    }
+  ],
+  "license": "BSD",
+  "readmeFilename": "Readme.md",
+  "devDependencies": {
+    "tape": "^4.4.0"
+  }
+}
