@@ -1,6 +1,6 @@
 {
   "name": "super-duper-serial-gps-system",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Simple module to handle serial based NMEA GPS devices",
   "main": "./src/serialgps.js",
   "scripts": {
@@ -26,9 +26,6 @@
   "license": "APSL-2.0",
   "devDependencies": {
     "tape": "^4.4.0"
-  },
-  "bugs": {
-    "url": "https://github.com/omcaree/node-serialgps/issues"
   },
   "directories": {
     "test": "test"
