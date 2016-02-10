@@ -1,11 +1,7 @@
 # super-duper-serial-gps-system
 
-This JavaScript library makes use of the serial port and NMEA modules to simplify data collection from a GPS device.
+This JavaScript library makes use of the serial port and NMEA modules to simplify data collection from a GPS device.  This has been tested on the Origin Nano Hornet (ORG1411) and the U Blox6 Receiver GPS devices.  It has been tested on the BeagleBone series running Linux.
 
-
-## Serial NMEA GPS Module
-
-This module makes use of the serialport and nmea modules to simplify data collection from a GPS device.
 
 ### Installation
 
