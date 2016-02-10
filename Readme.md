@@ -84,13 +84,11 @@ returns the following object.  Note that this is the default nmea output and the
   talker_id: 'GP' }
 ```
 
-Trouble Shooting
-================
+# Trouble Shooting
 
 This section describes some tips for trouble shooting.
 
-Using your GPS device for the first time
-----------------------------------------
+## Using your GPS device for the first time
 
 When you first use a GPS device from the factory, it will take a long time to
 determine the position.  This time is called time to first fix
@@ -98,10 +96,21 @@ determine the position.  This time is called time to first fix
 to get the signal on first use.  If you have previously used the GPS it can take
 around 20 seconds.
 
-Some GPS devices need to be powered on
---------------------------------------
+## Some GPS devices need to be powered on
 
 Some GPS devices require the PWR (power) line to be set for a short period
 (100ms) before they start working.  This is like the Origin Nano Hornet
 (ORG1411), see also MikroE Nano GPS click.  This feature allows your GPS device
 to be turned on and off, which saves power.
+
+
+
+## License
+
+Copyright 2016 Simon M. Werner
+
+Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.  See the NOTICE file distributed with this work for additional information regarding copyright ownership.  The ASF licenses this file to you under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.  You may obtain a copy of the License at
+
+  [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License.

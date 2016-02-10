@@ -21,6 +21,11 @@
  *                                                                   *
  *********************************************************************/
 
+/*
+ * This code is based on the following:
+ *   https://github.com/omcaree/node-serialgps/blob/master/src/serialgps.js
+ */
+
 'use strict';
 
 var serialport = require('serialport');
