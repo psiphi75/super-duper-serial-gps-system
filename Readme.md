@@ -19,8 +19,10 @@ var serialgps = require('super-duper-serial-gps-system');
 
 // create a new instance. arguments are serial port and baud rate.
 // You may have to change the baudrate to another value, read you
-// GPS device documentation.
-var gps = new serialgps('/dev/ttyO1', 4800);
+// GPS device documentation.  Some GPS devices have a baudrate of 4800.
+// The serial device also needs to be available in Linux, see trouble shooting
+// below.
+var gps = new serialgps('/dev/ttyO2', 9600);
 
 // monitor for 'position' event.  The data object is described below.
 gps.on('position', function(data) {
@@ -99,6 +101,19 @@ Some GPS devices require the PWR (power) line to be set for a short period
 (ORG1411), see also MikroE Nano GPS click.  This feature allows your GPS device
 to be turned on and off, which saves power.
 
+## Enable the serial port on the BeagleBone
+
+Serial ports in Linux have names like `/dev/ttyS1`.  These need to be registered
+in the kernel.  If you are using BeagleBone you can use
+[octalbonescript](https://www.npmjs.com/package/octalbonescript) to enable the
+serial port.  Below is an example:
+
+```javascript
+var obs = require('octalbonescript');
+obs.serial.enable('/dev/ttyO2', function() {  
+    console.log('enabled serial');
+});
+```
 
 
 ## License
