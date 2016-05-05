@@ -58,6 +58,7 @@ var serialgps = function(device, baud) {
 
         // Emit our stuff
         self.emit('data', data);
+        self.emit('raw', line);
         self.emit(data.type, data);
         if (data.type === 'fix') {
             self.emit('position', parseNmeaFix(data));
