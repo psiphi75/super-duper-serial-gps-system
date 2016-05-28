@@ -1,5 +1,13 @@
 # super-duper-serial-gps-system
 
+## IMPORTANT NOTE
+
+This module is now deprecated and it is no longer maintained.  Use [GPS](https://www.npmjs.com/package/gps) ([github](https://github.com/infusion/GPS.js))
+instead.  The GPS module has all the functionality of this module and more.  It supports many more NMEA commands.
+Migration should be trivial.
+
+## Introduction
+
 This JavaScript library makes use of the serial port and NMEA modules to simplify data collection from a GPS device.  This has been tested on the Origin Nano Hornet (ORG1411) and the U Blox6 Receiver GPS devices.  It has been tested on the BeagleBone series running Linux.
 
 
