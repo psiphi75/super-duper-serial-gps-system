@@ -1,6 +1,6 @@
 {
   "name": "super-duper-serial-gps-system",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "Simple module to handle serial based NMEA GPS devices",
   "main": "./src/serialgps.js",
   "scripts": {

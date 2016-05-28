@@ -28,6 +28,8 @@
 
 'use strict';
 
+console.error('super-duper-serial-gps-system: This npm module is deprecated.  Please migrate to GPS (https://www.npmjs.com/package/gps) instead.');
+
 var serialport = require('serialport');
 var nmea = require('nmea');
 var EventEmitter = require('events').EventEmitter;
